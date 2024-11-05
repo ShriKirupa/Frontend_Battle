@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Container */
+.contact-us-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: auto;
+    background-color: #1c1c1c; /* Dark background */
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding-left: 500px;
+    transition: padding-left 0.5s ease; /* Transition for padding-left */
+}
+
+/* Form Wrapper */
+.contact-us-form-wrapper {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Title Styling */
+.contact-us-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Form Styling */
+.contact-us-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-input,
+.contact-textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #e0e0e0;
+    outline: none;
+    transition: background-color 0.3s;
+}
+
+.contact-input::placeholder,
+.contact-textarea::placeholder {
+    color: #666;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+    background-color: #f5f5f5;
+}
+
+.contact-textarea {
+    resize: none;
+    height: 100px;
+}
+
+/* Submit Button */
+.contact-submit-button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-submit-button:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+/* Fun Animation for Success Message */
+.fun-animation {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #4caf50;
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .contact-us-title {
+        font-size: 1.8rem;
+    }
+}
